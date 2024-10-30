@@ -33,3 +33,32 @@ ny_noaa <- ny_noaa %>%
 set.seed(42)
 sample_data <- sample_n(ny_noaa, 500) 
 ```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r scatterplot}
+scatter_plot <- sample_data %>%
+  plot_ly(
+    x = ~tmax, 
+    y = ~prcp, 
+    type = "scatter", 
+    mode = "markers",
+    color = ~tmax, 
+    text = ~str_c("Date: ", date, "<br>Max Temp: ", tmax, "degree C", "<br>Precipitation: ", prcp, " mm"),
+    alpha = 0.5
+  ) %>%
+  layout(
+    title = "Scatterplot of Max Temperature vs Precipitation",
+    xaxis = list(title = "Max Temperature (degree C)"),
+    yaxis = list(title = "Precipitation (mm)")
+  )
+scatter_plot
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
