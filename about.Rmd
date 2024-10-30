@@ -1,9 +1,108 @@
 ---
-title: "my academic and professional experience"
+title: "Resume"
 output: 
   html_document:
     toc: true
     toc_float: true
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
-This is going to be my resume
+# Yixin Zheng
+
+**E-mail:** [your.email\@example.com](mailto:your.email@example.com)
+
+------------------------------------------------------------------------
+
+## Education
+**Columbia Univeristy, Mailman School of Public Health**\
+Master of Science in Biostatistics\
+New York, NY\
+Expected Graduation: June 2026\
+
+**University of California, Santa Barbara**\
+Bachelor of Arts in Statistics and Data Science\
+Santa Barbara, CA\
+Graduation: June 2024\
+Related Courses:\
+Calculus with Applications (A+), Linear
+Algebra with Applications (A), Probability and Statistics (A), Methods of Analysis (A), Regression Analysis (A),General Chemistry
+(A), Introductory Biology (A), Molecular Genetics: Prokaryotes (A),
+Human Physiology (A), Programming in Bio (A)
+
+------------------------------------------------------------------------
+
+## Research Experience
+
+### Meta-Analysis of Alzheimer's Disease Pathology Transcriptomic Data
+
+**Center for Excellence in Brain Science and Intelligence Technology,
+CAS**\
+Shanghai, China\
+**Research Assistant**\
+July 2023 - Jan 2024\
+**Advisor**: Prof. Jiulin Du\
+- Conducted a comprehensive meta-analysis on human brain transcriptomes from 470 AD patients and 300 non-AD individuals across seven brain
+regions.
+
+\- Identified 2,350 upregulated and 2,120 downregulated transcripts
+using random-effects and fixed-effects meta-analysis methods.
+
+\- Utilized co-expression analysis tools (MEGENA, WINA, Metanetwork,
+rWGCNA, Speakeasy) to identify 28 AD-related co-expression modules.
+
+\- Performed cell-type-specific analyses to confirm
+oligodendrocyte-associated features within modules.
+
+\- Reprocessed RNA-seq data from 88 mouse studies, defining 239 sets of
+significant DEGs and analyzing expression signatures using t-SNE plots.
+
+\- Highlighted sex-by-age interaction in AD progression through
+cross-species meta-analyses, uncovering accelerated transcriptional
+changes in female mice.
+
+### Syphilis Vaccine Development
+
+Shanghai, China\
+**Project Leader**\
+June 2018 – August 2019\
+- Proposed research on extracellular loops and outer membrane proteins
+(OMPs) for syphilis vaccine development, based on literature review.
+
+\- Tested vaccine safety, dosage, and T. pallidum strains, and developed
+methods to produce vaccines targeting multiple strains of T. pallidum.
+
+------------------------------------------------------------------------
+
+## Professional Experience
+
+### IQVIA
+
+Shanghai, China\
+**Intern**\
+June 2023 – August 2023\
+- Conducted research on Alopecia Areata, analyzing policy briefs,
+research reports, and annual reports.
+
+\- Developed strategic insights, forecasted market size, and evaluated
+competition, aiding in strategic planning.
+
+### Food Science and Processing Research Center, Shenzhen University
+
+Shenzhen, China\
+**Laboratory Assistant**\
+October 2020 – February 2021\
+- Enhanced soybean protein extraction protocols by optimizing processing
+methods.
+\- Collected and analyzed protein profile data using IEX-HPLC,
+contributing to a commercial project aimed at screening ideal soybean
+varieties.
+
+------------------------------------------------------------------------
+
+## Skills
+
+\- SAS, R, SPSS, Graphpad Prism, Origin, Python
+
+------------------------------------------------------------------------
