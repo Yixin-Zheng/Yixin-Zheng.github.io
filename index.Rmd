@@ -1,34 +1,25 @@
 ---
-title: "Yixin-Zheng.github.io"
-author: "Yixin Zheng"
-date: "`r Sys.Date()`"
+title: "Yixin Zheng Personal Website"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
+# introduction
+Hello! I’m Yixin Zheng (uni: yz4993), and welcome to my personal website. This landing page provides an introduction to my background, with links to my GitHub, email, and professional networks like LinkedIn and Handshake available in the top navigation bar.
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+Below, you’ll find a link to another page showcasing my academic and professional experience (my resume), as well as a little gif of my beloved cat, Duōlè!
 
-## R Markdown
+# links
+[Resume](about.html)
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Cat
+This is Duōlè.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+<img src="duole2.jpg" alt="Duole" width="300"/>
 
-```{r cars}
-summary(cars)
-```
+In Chinese, "Duō" means "many" and "Lè" means "happiness. 
 
-## Including Plots
+This is Duōlè saying hello!  
+<img src="duole.GIF" alt="Duole Saying Hello" width="300"/>
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
