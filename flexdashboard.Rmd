@@ -34,8 +34,6 @@ set.seed(42)
 sample_data <- sample_n(ny_noaa, 500) 
 ```
 
-
-Column {data-width=650}
 -----------------------------------------------------------------------
 
 ### Chart A
@@ -60,5 +58,42 @@ scatter_plot
 
 ```
 
-Column {data-width=350}
 -----------------------------------------------------------------------
+
+### Chart B
+
+```{r boxplot}
+box_plot <- sample_data %>%
+  plot_ly(
+    x = ~month, 
+    y = ~tmax, 
+    type = "box", 
+    color = ~month
+  ) %>%
+  layout(
+    title = "Max Temperature Distribution by Month",
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Max Temperature (°C)")
+  )
+box_plot
+```
+
+### Chart C
+
+```{r bar chart}
+bar_chart <- sample_data %>%
+  group_by(month) %>%
+  summarize(avg_prcp = mean(prcp, na.rm = TRUE)) %>%
+  plot_ly(
+    x = ~month, 
+    y = ~avg_prcp, 
+    type = "bar", 
+    color = ~month
+  ) %>%
+  layout(
+    title = "Average Precipitation by Month",
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Average Precipitation (mm)")
+  )
+bar_chart
+```
