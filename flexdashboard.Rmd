@@ -1,14 +1,35 @@
 ---
-title: "flexdashboard"
+title: "NY NOAA Data Dashboard"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
+library(viridis)
+```
+
+```{r load data and data cleaning}
+data("ny_noaa")
+ny_noaa <- ny_noaa %>%
+  filter(!is.na(prcp), #remove missing values
+         !is.na(tmax), 
+         !is.na(tmin)) %>%
+  mutate(
+    tmax = as.numeric(tmax) / 10,  # convert from tenths of degrees C to degree C
+    tmin = as.numeric(tmin) / 10,  # convert from tenths of degrees C to degree C
+    prcp = as.numeric(prcp) / 10,  # convert from tenths of mm to mm
+    year = lubridate::year(date), # extracts the year
+    month = lubridate::month(date, label = TRUE, abbr = TRUE) # extracts the month
+  )
+
+# random sample the data
+set.seed(42)
+sample_data <- sample_n(ny_noaa, 500) 
 ```
