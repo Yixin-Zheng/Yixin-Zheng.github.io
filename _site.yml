@@ -1,0 +1,18 @@
+name: "site_yml"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About"
+      href: about.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<yz4993@cumc.columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/Yixin-Zheng/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/
+    - icon: fa-handshake fa-lg
+      href: https://joinhandshake.com/
+output:
+  html_document:
+    theme: cerulean
