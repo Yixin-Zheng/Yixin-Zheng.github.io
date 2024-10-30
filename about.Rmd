@@ -11,7 +11,7 @@ editor_options:
 
 # Yixin Zheng
 
-**E-mail:** [your.email\@example.com](mailto:your.email@example.com)
+**E-mail:** [yz4993@cumc.columbia.edu](mailto:yz4993.cumc.columbia.edu)
 
 ------------------------------------------------------------------------
 
